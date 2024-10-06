@@ -1,0 +1,141 @@
+body {
+  /* background-image: url("../images/ben10.jpg"); */
+  /* background-size: cover; */
+  background: linear-gradient(
+    to right,
+    #b1d0e0 0%,
+    #83a6c3 25%,
+    #5579a0 50%,
+    #2d425c 75%,
+    #001933 100%
+  );
+  padding: 1%;
+}
+
+.logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  margin-top: 2%;
+  justify-content: space-evenly;
+  padding: 2%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 1em;
+}
+
+.box {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 25%;
+  height: fit-content;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.box .one {
+  border-radius: 10px;
+  object-fit: contain;
+  flex-grow: 1;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box .two {
+  padding: 1.5%;
+}
+
+.box .two li {
+  font-family: sans-serif;
+  list-style: none;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.box .two li,
+.box .two a {
+  color: white;
+}
+
+.box .two {
+  background-color: transparent;
+}
+button {
+  background-color: transparent;
+  color: darkblue;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 25px;
+}
+button:hover {
+  border-bottom: 5px solid rgb(48, 18, 219);
+  height: 90%;
+  width: 90%;
+  transition: ease 0.5s;
+}
+
+footer {
+  color: white;
+}
+/* .form-field {
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+} */
+@media only screen and (max-width: 1300px) {
+  .container {
+    margin-top: 2%;
+    flex-direction: column;
+    gap: 2em;
+    flex-wrap: nowrap;
+  }
+  .box {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5em;
+    flex-wrap: nowrap;
+  }
+  .logout {
+    top: 0;
+    right: 5px;
+  }
+  .box {
+    width: 100%;
+  }
+}

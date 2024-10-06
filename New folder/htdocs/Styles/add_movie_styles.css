@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(to bottom, #212529 0%, #4d248c 100%);
+  font-family: sans-serif;
+  padding: 2%;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-evenly;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #212529;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+li:hover {
+  background-color: #333;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-evenly;
+}
+input[type="checkbox"] {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+input[type="checkbox"]:checked + label .checkmark {
+  background-color: #27b914;
+  border-color: #4d248c;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
+button[type="submit"] {
+  margin-left: 40%;
+  background: linear-gradient(to bottom, #4d248c 0%, #212529 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+  background: white;
+  color: #4d248c;
+}
+@media only screen and (max-width: 768px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  label {
+    flex: none;
+  }
+
+  .checkmark {
+    margin-bottom: 0.5rem;
+  }
+
+  button[type="submit"] {
+    margin-left: 0;
+    width: 100%;
+  }
+}

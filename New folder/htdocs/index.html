@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/indexviews.css" />
+    <script type="module" src="js-files/app.js"></script>
+    <!-- <script type="module" src="js-files/testpi.js"></script> -->
+    <title>Movie Search</title>
+  </head>
+
+  <body>
+    <div class="search-container">
+      <div class="wrap">
+        <div class="search">
+          <input
+            type="text"
+            class="searchTerm"
+            placeholder="What are you looking for?"
+          />
+          <button type="submit" class="searchButton">🕵🏻‍♂️</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Sort</button>
+        <div class="dropdown-content">
+          <div class="filter-toWatch">
+            <div class="radio-buttons">
+              <input type="radio" id="name" name="name" />
+              <label for="name">By Name ⬆️</label>
+            </div>
+            <div class="radio-buttons">
+              <input type="radio" id="nameDESC" name="name" />
+              <label for="nameDESC">By Name ⬇️</label>
+            </div>
+            <div class="radio-buttons">
+              <input type="radio" id="release" name="name" />
+              <label for="release">By Release⬆️</label>
+            </div>
+            <div class="radio-buttons">
+              <input type="radio" id="releaseDESC" name="name" />
+              <label for="releaseDESC">By Release⬇️</label>
+            </div>
+
+            <div class="radio-buttons">
+              <input type="radio" id="rating" name="name" />
+
+              <label for="rating">By Rating⬆️</label>
+            </div>
+            <div class="radio-buttons">
+              <input type="radio" id="ratingDESC" name="name" />
+              <label for="ratingDESC">By Rating⬇️</label>
+            </div>
+            <div class="radio-buttons"></div>
+            <input type="button" id="findbutton" value="Find" />
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Filters</button>
+        <div class="dropdown-content">
+          <div class="filter-toWatch">
+            <input type="checkbox" id="toWatch" />
+            <label for="toWatch">To Watch</label>
+          </div>
+          <div class="filter-isFav">
+            <input type="checkbox" id="isFav" />
+            <label for="isFav">Favourites</label>
+          </div>
+          <div class="filter-ratings">
+            <input
+              type="number"
+              id="min-ratings"
+              placeholder="min ratings"
+              max="10"
+              min="0"
+            />
+            <input
+              type="number"
+              id="max-ratings"
+              placeholder="max ratings"
+              max="10"
+              min="0"
+            />
+          </div>
+          <input type="button" id="filterbutton" value="Apply" />
+          <input type="button" id="filterRemove" value="Reset-Range" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bofa-container">
+      <div class="bofa"></div>
+    </div>
+    <div class="movieContainer"></div>
+  </body>
+</html>
