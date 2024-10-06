@@ -33,9 +33,6 @@ The admin site is accessible at `/admin.php` and provides the following function
 - Secure login with PHP session management.
 - Server-side validation of login credentials.
 - Redirection to a Theatre List Page upon successful login.
-- Login credentials for testing:
-  - Username: `jpratt`
-  - Password: `jpratt`
 
 #### Theatre List Page
 - Displays a sortable list of all theatres in the database.
@@ -78,10 +75,3 @@ The public-facing site is a single-page application built around **index.html** 
 - **Database**: MySQL with Moviehouse schema.
 - **Hosting**: Google Cloud Platform.
 - **API Consumption**: TMDB API and custom Now Playing API.
-
-## Setup and Deployment
-To set up the project locally or on your own server:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/moviehouse.git
