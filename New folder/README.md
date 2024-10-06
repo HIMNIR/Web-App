@@ -7,10 +7,9 @@
    - [Admin Site](#admin-site)
    - [Public Site](#public-site)
 3. [Tech Stack](#tech-stack)
-4. [Setup and Deployment](#setup-and-deployment)
-5. [Usage](#usage)
-6. [Screenshots](#screenshots)
-7. [Contributors](#contributors)
+
+
+
 
 ## Project Overview
 The **Moviehouse Project** is a comprehensive web application for managing movie theatres, movies, and showtimes. It includes a public-facing movie search system and an admin panel for managing theatre information and showtimes. The project leverages server-side PHP, PDO for database interaction, and front-end technologies for a modern, responsive interface.
